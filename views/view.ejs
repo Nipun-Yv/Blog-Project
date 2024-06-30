@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Blog</title>
+    <link href="/styles/view.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Write Your Thoughts Below</h1>
+    <h2>Please ensure that there is no use of hate speech/offensive remarks etc.</h2>
+    <form action="/home" method="post">
+        <input placeholder="Blog Title" name="title" value= '<%=Title%>'>
+        <textarea rows='5' placeholder="Space for Content" name="content"><%=Content%></textarea>
+        <button name="number" value='<%=Num%><%=Name%>' type="submit"> Commit Changes </button>
+        <form method="post" action="/home">
+            <button type="submit" name="back" value="<%=Name%>">Go Back</button>
+           </form>
+    </form>
+</body>
+</html>
